@@ -1,52 +1,224 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/dist/output.css" rel="stylesheet" />
 </head>
+
 <body class="bg-blue-200 font-sans">
-
   <div class="container mx-auto p-4 text-center">
-      <h1 class="text-4xl font-bold mb-4 text-purple-800">¡Bienvenido!</h1>
+    <h1 class="text-4xl font-bold mb-4 text-purple-800">¡Bienvenido!</h1>
 
-      <div class="grid grid-cols-2 gap-4">
-          <!-- Sección de Juegos -->
-          <div class="p-4 bg-white rounded shadow-md">
-              <h2 class="text-2xl font-bold mb-2 text-blue-800">Ciencias sociales</h2>
-              <img src="../img/ciencias natulares.jpg" alt="Icono de Juegos" class="w-16 h-16 mx-auto mb-4">
-              <p class="text-gray-700">¡Diviértete jugando nuestros emocionantes juegos!</p>
-              <a href="#" class="mt-2 block text-blue-500 hover:underline">Explora Juegos</a>
-          </div>
-
-          <!-- Sección de Aprendizaje -->
-          <div class="p-4 bg-white rounded shadow-md">
-              <h2 class="text-2xl font-bold mb-2 text-green-800">Ciencias Naturales</h2>
-              <img src="../img/ciencias natulares.jpg" alt="Icono de Aprendizaje" class="w-16 h-16 mx-auto mb-4">
-              <p class="text-gray-700">Aprende cosas nuevas mientras te diviertes.</p>
-              <a href="#" class="mt-2 block text-green-500 hover:underline">Explora Aprendizaje</a>
-          </div>
-
-          <div class="p-4 bg-white rounded shadow-md">
-            <h2 class="text-2xl font-bold mb-2 text-green-800">Lengua castellana</h2>
-            <img src="../img/ciencias natulares.jpg" alt="Icono de Aprendizaje" class="w-16 h-16 mx-auto mb-4">
-            <p class="text-gray-700">Aprende cosas nuevas mientras te diviertes.</p>
-            <a href="#" class="mt-2 block text-green-500 hover:underline">Explora Aprendizaje</a>
-        </div>
-        <div class="p-4 bg-white rounded shadow-md">
-          <h2 class="text-2xl font-bold mb-2 text-green-800">Etica</h2>
-          <img src="../img/ciencias natulares.jpg" alt="Icono de Aprendizaje" class="w-16 h-16 mx-auto mb-4">
-          <p class="text-gray-700">Aprende cosas nuevas mientras te diviertes.</p>
-          <a href="#" class="mt-2 block text-green-500 hover:underline">Explora Aprendizaje</a>
+    <div class="grid grid-cols-2 gap-4">
+      <!-- Sección de Juegos -->
+      <div class="p-4 bg-white rounded shadow-md">
+        <h2 class="text-2xl font-bold mb-2 text-blue-800">
+          Ciencias sociales
+        </h2>
+        <img src="../img/ciencias natulares.jpg" alt="Icono de Juegos" class="w-16 h-16 mx-auto mb-4" />
+        <p class="text-gray-700">
+          ¡Diviértete jugando nuestros emocionantes juegos!
+        </p>
+        <a href="#" class="mt-2 block text-blue-500 hover:underline">Explora Juegos</a>
       </div>
+
+      <!-- Sección de Aprendizaje -->
+      <div class="p-4 bg-white rounded shadow-md">
+        <h2 class="text-2xl font-bold mb-2 text-green-800">
+          Ciencias Naturales
+        </h2>
+        <img src="../img/ciencias natulares.jpg" alt="Icono de Aprendizaje" class="w-16 h-16 mx-auto mb-4" />
+        <p class="text-gray-700">
+          Aprende cosas nuevas mientras te diviertes.
+        </p>
+        <a href="#" class="mt-2 block text-green-500 hover:underline">Explora Aprendizaje</a>
       </div>
+
+      <div class="p-4 bg-white rounded shadow-md">
+        <h2 class="text-2xl font-bold mb-2 text-green-800">
+          Lengua castellana
+        </h2>
+        <img src="../img/ciencias natulares.jpg" alt="Icono de Aprendizaje" class="w-16 h-16 mx-auto mb-4" />
+        <p class="text-gray-700">
+          Aprende cosas nuevas mientras te diviertes.
+        </p>
+        <a href="#" class="mt-2 block text-green-500 hover:underline">Explora Aprendizaje</a>
+      </div>
+      <div class="p-4 bg-white rounded shadow-md">
+        <h2 class="text-2xl font-bold mb-2 text-green-800">Etica</h2>
+        <img src="../img/ciencias natulares.jpg" alt="Icono de Aprendizaje" class="w-16 h-16 mx-auto mb-4" />
+        <p class="text-gray-700">
+          Aprende cosas nuevas mientras te diviertes.
+        </p>
+        <a href="#" class="mt-2 block text-green-500 hover:underline">Explora Aprendizaje</a>
+      </div>
+    </div>
   </div>
-  
-  <footer class="bg-gray-800 text-white p-4 text-center mt-80">
-    <p>&copy; 2023 Interfaz para Niños. Todos los derechos reservados.</p>
-  </footer>
-  
+  <!-- ##############################################################seccion de preguntas########################################################################## -->
+  <div class="mt-20">
+    <div class="container mx-auto p-4 text-center">
+      <h1 class="text-4xl font-bold mb-4 text-purple-800">¡Aqui!</h1>
 
+      <!-- Pregunta 1 -->
+      <div id="preguntas" class="grid grid-cols-2 gap-4">
+        <!-- Preguntas de selección múltiple -->
+        <div class="p-4 bg-white rounded shadow-md pregunta" data-pregunta="1">
+          <h2 class="text-2xl font-bold mb-2 text-blue-800">Pregunta 1</h2>
+          <p class="text-gray-700">Selecciona la respuesta correcta:</p>
+          <ul>
+            <li>
+              <input type="radio" name="pregunta1" value="a" onclick="capturarRespuesta(this)" />
+              Opción A
+            </li>
+            <li>
+              <input type="radio" name="pregunta1" value="b" onclick="capturarRespuesta(this)" />
+              Opción B
+            </li>
+            <li>
+              <input type="radio" name="pregunta1" value="c" onclick="capturarRespuesta(this)" />
+              Opción C
+            </li>
+          </ul>
+          <!-- <button class="siguiente" onclick="mostrarSiguiente(1)">Siguiente</button> -->
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="p-4 bg-white rounded shadow-md pregunta" data-pregunta="2">
+          <h2 class="text-2xl font-bold mb-2 text-blue-800">Pregunta 2</h2>
+          <p class="text-gray-700">Selecciona la respuesta correcta:</p>
+          <ul>
+            <li>
+              <input type="radio" name="pregunta2" value="a" onclick="capturarRespuesta(this)" />
+              Opción A
+            </li>
+            <li>
+              <input type="radio" name="pregunta2" value="b" onclick="capturarRespuesta(this)" />
+              Opción B
+            </li>
+            <li>
+              <input type="radio" name="pregunta2" value="c" onclick="capturarRespuesta(this)" />
+              Opción C
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="p-4 bg-white rounded shadow-md pregunta" data-pregunta="3">
+          <h2 class="text-2xl font-bold mb-2 text-blue-800">Pregunta 3</h2>
+          <p class="text-gray-700">Selecciona la respuesta correcta:</p>
+          <ul>
+            <li>
+              <input type="radio" name="pregunta3" value="a" onclick="capturarRespuesta(this)" />
+              Opción A
+            </li>
+            <li>
+              <input type="radio" name="pregunta3" value="b" onclick="capturarRespuesta(this)" />
+              Opción B
+            </li>
+            <li>
+              <input type="radio" name="pregunta3" value="c" onclick="capturarRespuesta(this)" />
+              Opción C
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="p-4 bg-white rounded shadow-md pregunta" data-pregunta="4">
+          <h2 class="text-2xl font-bold mb-2 text-blue-800">Pregunta 4</h2>
+          <p class="text-gray-700">Selecciona la respuesta correcta:</p>
+          <ul>
+            <li>
+              <input type="radio" name="pregunta4" value="a" onclick="capturarRespuesta(this)" />
+              Opción A
+            </li>
+            <li>
+              <input type="radio" name="pregunta4" value="b" onclick="capturarRespuesta(this)" />
+              Opción B
+            </li>
+            <li>
+              <input type="radio" name="pregunta4" value="c" onclick="capturarRespuesta(this)" />
+              Opción C
+            </li>
+          </ul>
+          <button onclick="calcularRespuestas()">siguiente</button>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="p-4 bg-white rounded shadow-md pregunta hidden" data-pregunta="5">
+          <h2 class="text-2xl font-bold mb-2 text-blue-800">Pregunta 5</h2>
+          <p class="text-gray-700">Selecciona la respuesta correcta:</p>
+          <ul>
+            <li>
+              <input type="radio" name="pregunta5" value="a" onclick="capturarRespuesta(this)" />
+              Opción A
+            </li>
+            <li>
+              <input type="radio" name="pregunta5" value="b" onclick="capturarRespuesta(this)" />
+              Opción B
+            </li>
+            <li>
+              <input type="radio" name="pregunta5" value="c" onclick="capturarRespuesta(this)" />
+              Opción C
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="respuestas" class=" mt-10">
+        <h2 class="text-2xl font-bold mb-2 text-blue-800">
+          Las espuestas son?????
+        </h2>
+        <button onclick="calcularRespuestas(respuestasSeleccionadas)">Ver Respuestas</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-gray-800 text-white p-4 text-center mt-80">
+    <p>&copy; 2023 Todos los derechos reservados.</p>
   </footer>
+  <!-- ##############################################################js########################################################################## -->
+  <script>
+    let preguntaActual = 1;
+    let respuestasSeleccionadas = [];
+
+
+    function capturarRespuesta(radio) {
+      
+      const pregunta = radio.name;
+      const respuesta = radio.value;
+
+      const indice = respuestasSeleccionadas.findIndex(
+        (item) => item.pregunta === pregunta
+      );
+
+      if (indice !== -1) {
+        // Si ya hay una respuesta para esta pregunta, actualiza la selección
+        respuestasSeleccionadas[indice].respuesta = respuesta;
+      } else {
+        // Si no hay una respuesta para esta pregunta, agrega una nueva entrada
+        respuestasSeleccionadas.push({ pregunta, respuesta });
+      }
+
+      console.log("Respuestas seleccionadas:", respuestasSeleccionadas);
+    }
+
+    function calcularRespuestas(respuestasSeleccionadas) {
+      const respuestasCorrectas = ["b", "c", "a", "a", "b"];
+      const respuestasContainer = document.getElementById("respuestas");
+      respuestasContainer.innerHTML = `<h2>Resultados</h2><ul>`;
+      
+      for (let i = 0; i < respuestasCorrectas.length; i++) {
+        const esCorrecta = respuestasCorrectas[i] === respuestasSeleccionadas[i].respuesta;
+        respuestasContainer.innerHTML += `<li>Pregunta ${i + 1}: ${esCorrecta ? 'Correcta' : 'Incorrecta'
+          }</li>`;
+      }
+
+      // respuestasContainer.innerHTML += `</ul>`;
+      respuestasContainer.style.display = "block";
+      respuestasContainer.style.backgroundColor="white"
+    }
+  </script>
 </body>
+
 </html>
