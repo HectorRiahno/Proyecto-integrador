@@ -5,15 +5,30 @@ export class RenderPreguntasyRespuestas {
   preguntasSeleccionadas = []
   todasPreguntasResueltas = false
   indicePreguntaActual = 0
+  p=0
   constructor (preguntas) {
+    this.p=preguntas.length
     this.preguntasDesordenadas = preguntas.sort(() => Math.random() - 0.5).splice(0, cantMaximaPreguntas)
+    
   }
+  
 
   renderRespuestas = () => {
     if (this.indicePreguntaActual >= cantMaximaPreguntas - 1) {
       this.indicePreguntaActual = cantMaximaPreguntas - 1
       btnSiguiente.innerText = 'Finalizar'
+      if(this.p<20){
+      setTimeout(function () {
+        window.location.href = './index.html';
+    }, 2000);
+    }else{
+      setTimeout(function () {
+        window.location.href = '../index.html';
+        }, 2000);
     }
+    
+    }
+
 
     seccionPreguntas.innerHTML = ''
     const pregunta = this.preguntasDesordenadas[this.indicePreguntaActual]
